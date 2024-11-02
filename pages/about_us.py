@@ -1,4 +1,9 @@
 import streamlit as st
+from utility import check_password
+
+#check if password is correct
+if not check_password():
+    st.stop()
 
 st.set_page_config(
     page_title="About Us",

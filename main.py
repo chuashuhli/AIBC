@@ -1,5 +1,10 @@
 import streamlit as st
 from helper_functions import llm # <--- This is the helper function that we have created 🆕
+from utility import check_password
+
+#check if password is correct
+if not check_password():
+    st.stop()
 
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(

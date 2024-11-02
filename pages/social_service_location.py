@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 import pydeck as pdk
+from utility import check_password
+
+#check if password is correct
+if not check_password():
+    st.stop()
 
 data = {
     "SSO Location": [
