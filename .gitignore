@@ -21,6 +21,4 @@ dist/
 # PyCharm 
 .idea/
 
-
-# Streamlit
 .streamlit/secrets.toml
