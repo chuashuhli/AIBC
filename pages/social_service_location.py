@@ -71,10 +71,8 @@ st.pydeck_chart(pdk.Deck(
     map_style="mapbox://styles/mapbox/light-v9",
     initial_view_state=map_view,
     layers=[layer],
-    tooltip={"text": "{SSO Location}"}
+    tooltip={"text": "{SSO Location}\n{Address}"}
 ))
-
-
 
 st.title("Addresses of Social Service Offices:")
 st.dataframe(df[["SSO Location", "Address"]])
